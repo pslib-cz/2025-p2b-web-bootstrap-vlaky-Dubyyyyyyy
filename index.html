@@ -1,3 +1,124 @@
-<img src="images/slide_1.webp" alt="Slide s nočním městem">
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tapety vlaků a lokomotiv</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-body-tertiary">
 
-<img src="images/card_img_1.webp" alt="Obrázek vlaku Siemens Velaro">             
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Domů</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="row">
+      
+      <div class ="col-md-9">
+        <h1 class="my-5 text-center">Tapety vlaků a lokomotiv</h1>
+        <blockquote class="blockquote text-center">
+        <footer class ="blockquote footer"><a href="#">Úvod</a> / Vlaky a Lokomotivy</footer>
+          <p>To co jsem zde viděl snad nelze ani popsat slovy.</p>
+          <footer class="blockquote-footer">Štěpán Halíř, SPSŠSSSŠ a VOSCH Liberec</footer>
+        </blockquote>
+
+        <div id="carouselVlaky" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVlaky" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselVlaky" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselVlaky" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselVlaky" data-bs-slide-to="3"></button>
+        </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="images/slide_1.webp" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide_2.webp" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide_3.webp" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide_4.webp" class="d-block w-100" alt="Slide 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselVlaky" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselVlaky" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/card_img_1.webp" class="card-img-top" alt="Siemens Velaro">
+              <div class="card-body">
+                <h5 class="card-title">Siemens Velaro</h5>
+                <p class="card-text">1920x1080, 2560x1440</p>
+                <a href="#" class="card-link">Stáhnout</a>
+                <a href="#" class="card-link">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/card_img_2.webp" class="card-img-top" alt="Škoda RegioPanter">
+              <div class="card-body">
+                <h5 class="card-title">Škoda RegioPanter</h5>
+                <p class="card-text">1920x1080, 4K</p>
+                <a href="#" class="card-link">Stáhnout</a>
+                <a href="#" class="card-link">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="mt-5" aria-label="Stránkování">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link">Předchozí</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Další</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <aside class="col-md-3 mt-5 mt-md-0">
+        <h5 class="mb-3">Kategorie</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-action">Moderní vlaky</li>
+          <li class="list-group-item list-group-item-action">Historické lokomotivy</li>
+          <li class="list-group-item list-group-item-action">Rychlovlaky</li>
+          <li class="list-group-item list-group-item-action">Regionální soupravy</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    © 2025 Tapety vlaků a lokomotiv
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
